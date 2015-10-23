@@ -2,10 +2,21 @@
 
 angular.module('webRtcApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
-    $scope.menu = [{
-      'title': 'Home',
-      'link': '/'
-    }];
+    $scope.menu = [
+      {
+        'title': 'Home',
+        'link': '/'
+      },
+      {
+        'title': 'Contact',
+        'link': '/contact'
+      },
+      {
+        'title': 'About us',
+        'link': '/aboutUs'
+      }
+
+    ];
 
     $scope.isCollapsed = true;
     $scope.isLoggedIn = Auth.isLoggedIn;
