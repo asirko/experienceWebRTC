@@ -1,12 +1,28 @@
-##############################################
-###				 PROJET WEB RTC			   ###
-###	 By Alexandre SIRKO & Kristen VIGUIER  ###
-##############################################
+
+# PROJET WEB RTC
+## By Alexandre SIRKO & Kristen VIGUIER
+
+### Initialisation du projet
+
+#### Installation des outils nécessaires
+
+Cette application utilise de nombreux outils. Dans la suite de cette section, les différents outils sont listés mais il faut faire attention à leurs usages (ils ne sont pas tous utilisés pour le développement).
+
+* [Node.js](https://nodejs.org/en/), l'interpréteur Javascript
 
 
 
 
-#- Listes commandes utiles classées par catégorie -#
+
+
+
+
+
+
+
+
+
+### Listes commandes utiles classées par catégorie
 
 
 #POUR ROUTES
