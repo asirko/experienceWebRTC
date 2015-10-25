@@ -38,8 +38,18 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/F/Programmation/WebRTC",
+		"/F/Programmation/WebRTC/server"
+	],
 	"file_history":
 	[
+		"/F/téléchargement/Erosion.c",
+		"/F/Programmation/WebRTC/server/config/express.js",
+		"/F/Programmation/WebRTC/package.json",
+		"/F/Programmation/WebRTC/bower.json",
+		"/F/Programmation/WebRTC/Gruntfile.js",
 		"/F/Programmation/WebRTC/client/app/admin/admin.html",
 		"/F/Programmation/WebRTC/client/app/main/main.controller.spec.js",
 		"/F/Programmation/WebRTC/client/app/main/main.controller.js",
@@ -179,7 +189,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 205.0,
+	"side_bar_width": 274.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
