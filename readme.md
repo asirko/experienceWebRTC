@@ -12,7 +12,7 @@ Cette application utilise de nombreux outils. Dans la suite de cette section, le
 
 
 
-
+C'est beau
 
 
 
@@ -42,7 +42,7 @@ Cette application utilise de nombreux outils. Dans la suite de cette section, le
 		(Permet de lancer le service mongoDB)
 		
 	3) Dans l'autre : 
-			- se rendre à la racine du projet d:\Profiles\kviguier\Desktop\Perso\alexandre_git\experienceWebRTC
+			- se rendre à la racine du projet .\project
 			- taper grunt serve
 		(Permet de lancer le serveur sur le port 9000)
 

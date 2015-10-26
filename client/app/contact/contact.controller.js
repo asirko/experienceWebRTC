@@ -1,26 +1,30 @@
 'use strict';
 
 angular.module('webRtcApp')
-  .controller('ContactCtrl', function ($scope) {
-  	$scope.formContact = {};
-  	$scope.errors = {};
+.controller('ContactCtrl', function ($scope, $http) {
+ $scope.formContact = {};
+ $scope.errors = {};
 
-  	var donneeForm = {
-  		name: "",
-  		email: "",
-  		message: ""
-  	};
+ var donneeForm = {
+  name: "",
+  email: "",
+  message: ""
+};
 
     // Fonctions contact
-   	$scope.sendContact = function(contactForm){
-  
-		donneeForm.name =  $scope.formContact.name;
-		donneeForm.email = $scope.formContact.email;
-		donneeForm.message = $scope.formContact.message;
-  
+    $scope.sendContact = function(contactForm){
+      donneeForm.name =  $scope.formContact.name;
+      donneeForm.email = $scope.formContact.email;
+      donneeForm.message = $scope.formContact.message;
 
-    	console.log("Fonction send contact : ");
-    	console.log(donneeForm);
+      $http({
+        method: 'POST',
+        url: '/api/contacts'
+      }).then(function successCallback(response) {
+        console.log(response);
+      }, function errorCallback(response) {
+        console.log(response);
+      })
     };
 
   });
