@@ -22,6 +22,7 @@ exports.show = function(req, res) {
 
 // Creates a new contact in the DB.
 exports.create = function(req, res) {
+  console.log(req.body);
   Contact.create(req.body, function(err, contact) {
     if(err) { return handleError(res, err); }
     return res.status(201).json(contact);

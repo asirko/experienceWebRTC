@@ -6,10 +6,10 @@ angular.module('webRtcApp')
  $scope.errors = {};
 
  var donneeForm = {
-  name: "",
-  email: "",
-  message: ""
-};
+    name: "",
+    email: "",
+    message: ""
+  };
 
     // Fonctions contact
     $scope.sendContact = function(contactForm){
@@ -17,14 +17,11 @@ angular.module('webRtcApp')
       donneeForm.email = $scope.formContact.email;
       donneeForm.message = $scope.formContact.message;
 
-      $http({
-        method: 'POST',
-        url: '/api/contacts'
-      }).then(function successCallback(response) {
+      $http.post('/api/contacts', donneeForm).then(function successCallback(response) {
         console.log(response);
       }, function errorCallback(response) {
         console.log(response);
-      })
-    };
+      });
+    }
 
-  });
+});

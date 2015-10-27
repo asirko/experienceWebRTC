@@ -1,12 +1,30 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<div class="container">
-  <p>The delete user and user index api routes are restricted to users with the 'admin' role.</p>
-  <ul class="list-group">
-    <li class="list-group-item" ng-repeat="user in users">
-        <strong>{{user.name}}</strong><br>
-        <span class="text-muted">{{user.email}}</span>
-        <a ng-click="delete(user)" class="trash"><span class="glyphicon glyphicon-trash pull-right"></span></a>
-    </li>
-  </ul>
+
+
+<div class="container right">
+	<div class="row">
+		<div class="col-md-3">
+			<ul class="nav nav-list">
+				<li class="nav-header">Panel administrateur</li>
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Contact  <span class="badge">42</span></a></li>
+				<li><a href="#">Messagerie  <span class="badge">86</span></a></li>
+				<li><a href="#">Profil</a></li>
+			</ul>
+		</div>
+		<div class="col-md-8"><!-- faier le sous templating ici ui.route -->
+
+			
+			  <p>The delete user and user index api routes are restricted to users with the 'admin' role.</p>
+			  <ul class="list-group">
+			    <li class="list-group-item" ng-repeat="user in users">
+			        <strong>{{user.name}}</strong><br>
+			        <span class="text-muted">{{user.email}}</span>
+			        <a ng-click="delete(user)" class="trash"><span class="glyphicon glyphicon-trash pull-right"></span></a>
+			    </li>
+			  </ul>
+		</div>
+
+	</div>
 </div>
