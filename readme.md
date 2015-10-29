@@ -5,7 +5,7 @@ By Alexandre SIRKO & Kristen VIGUIER
 ## Objectif du projet
 
 Les principaux objectifs sont :
-* Apprendre et développer nos connaissance des outils Javascript "haute productivité" (Node, Angular, Bower, Grunt, Yeoman, Heroku, MongoDB, etc.) ;
+* Apprendre et développer nos connaissances des outils Javascript "haute productivité" (Node, Angular, Bower, Grunt, Yeoman, Heroku, MongoDB, etc.) ;
 * Développer une platforme de communication multi-support (chat, forum, microphone, webcam) ;
 * Profiter de cette plateforme pour partager les informations et compétences acquises.
 
@@ -20,11 +20,11 @@ Cette application utilise de nombreux outils. Dans la suite de cette section, le
 * [git](http://git-scm.com/) : le gestionnaire de version de l'application. Comme les deux outils précédents, il se télécharge et s'installe très simplement depuis le site officiel. Pour tester son installation, utilisez la commande `git --version`. Si vous êtes amené à utiliser git pour enregistrer des modification sur le code, vous devrez saisir vos identifiants mais normalement git vous expliquera la procédure dès que vous y serez confronté ;
 * Les différents outils de l'environnement Javascript peuvent tous s'installer en une seule ligne de commande : `npm install -g yo grunt-cli bower generator-angular-fullstack` les outils ainsi installé sont respectivement :
 	* yo : Yeoman un utilitaire de scaffolding (génération de code automatisé à l'initialisation du projet ET à différentes étapes du développement) ;
-	* grunt-cli : outil d'automatisation de tâches (génère une version minifié de l'application, démarre le serveur de développement, construit une version déploiyable, etc.) ;
-	* bower : outil de gestion des dépendances front-end (contrairement à npm qui se charge des dépendance back-end) ;
+	* grunt-cli : outil d'automatisation de tâches (génère une version minifiée de l'application, démarre le serveur de développement, construit une version déploiyable, etc.) ;
+	* bower : outil de gestion des dépendances front-end (contrairement à npm qui se charge des dépendances back-end) ;
 	* generator-angular-fullstack : le générateur pour Yeoman permettant de généré du code sur l'architecture choisis.
 
-**Note :** les outils installés plus haut peuvent nécessiter des configuration supplémentaire suivant votre environnement personnel. Par exemple, les utilisateurs étant derrière un proxy auront besoin de le définir pour npm, git et bower (étant donné qu'ils utilisent le réseau pour télécharger des ressources).
+**Note :** les outils installés plus haut peuvent nécessiter des configurations supplémentaires suivant votre environnement personnel. Par exemple, les utilisateurs étant derrière un proxy auront besoin de le définir pour npm, git et bower (en effet, ils utilisent le réseau pour télécharger des ressources).
 
 ### Télécharger et démarrer l'application
 
