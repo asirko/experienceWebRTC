@@ -30,7 +30,7 @@ Cette application utilise de nombreux outils. Dans la suite de cette section, le
 
 #### Création du Projet
 
-Avant de récupérer les sources de l'application, placer vous en ligne de commande dans le répertoire où vous voulez placer le projet. Il est important de que ce répertoire sera le coeur de votre travail, et que ce travail se fera souvant en ligne de commande.
+Avant de récupérer les sources de l'application, placez vous en ligne de commande dans le répertoire où vous voulez placer le projet. Il faut garder à l'idée que ce répertoire sera le coeur de votre travail, et que ce travail se fera souvant en ligne de commande.
 
 Une fois dans votre projet, vous pouvez "cloner" le projet. Pour celà, utilisez la commande `git clone https://github.com/asirko/experienceWebRTC.git`. Cette commande va créer le dossier experienceWebRTC et y télécharger l'intégralité du projet à l'image de ce qui est stocké ici.
 
@@ -44,6 +44,8 @@ Pour installer les librairies, il faut donc exécuter successivement en ligne de
 * `npm intall`
 * `bower install`
 
+Par la suite, il sera possible d'avoir à réutiliser ces commandes, essentiellement si un autre développeur télécharge une nouvelle dépendance pour le projet. 
+
 #### Démarrage du projet
 
 Commençons par démarrer le serveur de base de données, pour les utilisateur windows, ouvrez une invite de commande en mode administrateur. Puis, placez vous dans le répertoire /bin de MongoDB (par défaut pour Windows : `C:\Program Files\MongoDB\Server\3.0\bin`). Enfin démarrer le "demon" MongoDB avec la commande `./mongod.exe`.
@@ -56,15 +58,15 @@ L'application est ainsi démarrée et peut être utilisée.
 
 Le terme "pousser" désigner l'action de publier du code sur le répertoire parent et donc de partager vos modifications. Pour pouvoir effectivement pousser du code, il faut avoir à l'esprit que les administrateur de ce répertoire doivent vous y autoriser.
 
-Dans la plupart des cas, pousser du code s'effectuer en trois commandes successive:
+Dans la plupart des cas, pousser du code s'effectuer en trois commandes successives:
 ```
 git add --all
-git commit -m "un message décrivant ce qui est commité"
+git commit -m "votre message décrivant ce qui est commité"
 git push origin master
 ```
 
 * **add** permet d'ajouter des fichiers que git pourra prendre en compte, en association avec **rm**, il est possible d'ajouter de nouveaux fichiers ou d'en écarter temporairement d'autre le temps d'un commit.
-* **commit** permet de dire à git "Le code qui a évoluer est dans un état "fini"", archivant les modifications dans le système de gestion des versions local.
+* **commit** permet de dire à git "Le code qui a évolué est dans un état "fini"", archivant les modifications dans le système de gestion des versions local.
 * **push** permet de pousser les commit vers d'autres répertoires. Dans l'exemple plus haut, *origin* correspond au répertoire d'où le code provient (normalement, le répertoire sur github) et *master* correspond à la branche sur laquelle le code doit être poussé.
 
 
