@@ -8,6 +8,7 @@ angular.module('webRtcApp')
  var donneeForm = {
     name: "",
     email: "",
+    sujet: "",
     message: ""
   };
 
@@ -15,6 +16,7 @@ angular.module('webRtcApp')
     $scope.sendContact = function(contactForm){
       donneeForm.name =  $scope.formContact.name;
       donneeForm.email = $scope.formContact.email;
+      donneeForm.sujet = $scope.formContact.subject;
       donneeForm.message = $scope.formContact.message;
 
       $http.post('/api/contacts', donneeForm).then(function successCallback(response) {

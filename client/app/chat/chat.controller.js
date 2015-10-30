@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('webRtcApp')
-  .controller('RouteTestCtrl', function ($scope) {
+  .controller('ChatCtrl', function ($scope) {
     $scope.message = 'Hello';
   });

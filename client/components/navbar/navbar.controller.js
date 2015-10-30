@@ -6,16 +6,16 @@ angular.module('webRtcApp')
       {
         'title': 'Home',
         'link': '/'
-      },
-      {
+      },{
         'title': 'Contact',
         'link': '/contact'
-      },
-      {
+      },{
         'title': 'About us',
         'link': '/aboutUs'
+      },{
+        'title': 'Chat',
+        'link': '/chat'
       }
-
     ];
 
     $scope.isCollapsed = true;
