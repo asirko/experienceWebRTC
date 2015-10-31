@@ -9,7 +9,7 @@ Les principaux objectifs sont :
 * Développer une platforme de communication multi-support (chat, forum, microphone, webcam) ;
 * Profiter de cette plateforme pour partager les informations et compétences acquises.
 
-## Participer au projet
+## Démarrer avec le projet
 
 ### Installation des outils nécessaires
 
@@ -66,29 +66,53 @@ git push origin master
 ```
 
 * **add** permet d'ajouter des fichiers que git pourra prendre en compte, en association avec **rm**, il est possible d'ajouter de nouveaux fichiers ou d'en écarter temporairement d'autre le temps d'un commit.
-* **commit** permet de dire à git "Le code qui a évolué est dans un état "fini"", archivant les modifications dans le système de gestion des versions local.
+* **commit** permet de dire à git "Le code qui a évolué est dans un état "fini"", archivant les modifications dans le système de gestion des versions local. Essayez de préciser dans le message lié au "commit" les fonctionnalités impactées et les raisons des modifications.
 * **push** permet de pousser les commit vers d'autres répertoires. Dans l'exemple plus haut, *origin* correspond au répertoire d'où le code provient (normalement, le répertoire sur github) et *master* correspond à la branche sur laquelle le code doit être poussé.
 
+**Note :** Il se peut que la réponse soit en erreur, vous précisant que votre version du code code n'est pas à jour par rapport au code présent sur le répertoire central. Dans ce cas vous devrez [mettre à jour votre code](https://github.com/asirko/experienceWebRTC#récupérer-les-modifications-des-autres)
+
+### Récupérer les modifications des autres
+
+Lorsque de nouvelles fonctionalités ont été développées par d'autre, il est très simple de les récuppérer sur sa verion du projet. Il faut utiliser la commande : `git pull`.
+
+Ici encore, il faut être vigilant, le "git pull" nécessite de ne pas avoir de modification "flottante". Le terme de modification "flottante" du code est utilisé ici pour désigner des modifications qui n'auraient pas été commités.
+
+## Structure du projet
+
+### Librairies utilisées
+
+### Architecture
+
+#### Décomposition globale
+
+#### Strucure Front-End
+
+#### Structure Back-End
+
+## Outils de développement
+
+### Gestion des dépendances
+
+#### npm : les dépendances Back-End
+
+#### bower : les dépendances Front-End
+
+### Exécution de tâches automatisées avec `grunt`
+
+### Scaffolding avec `Yeoman`
+
+#### Focus sur le generateurs `angular-fullstack`
 
 
- 
-
- 
-
- 
- 
-
- 
-
- 
 
 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
 
 
 ### Listes commandes utiles classées par catégorie
