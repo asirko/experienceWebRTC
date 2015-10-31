@@ -7,22 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "readme.md",
-			"settings":
-			{
-				"buffer_size": 4285,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/components/navbar/navbar.controller.js",
-			"settings":
-			{
-				"buffer_size": 687,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -56,18 +40,15 @@
 	},
 	"expanded_folders":
 	[
-		"/F/Programmation/WebRTC",
-		"/F/Programmation/WebRTC/.tmp/concat/app",
-		"/F/Programmation/WebRTC/client",
-		"/F/Programmation/WebRTC/client/app",
-		"/F/Programmation/WebRTC/client/app/admin",
-		"/F/Programmation/WebRTC/client/components",
-		"/F/Programmation/WebRTC/client/components/navbar"
 	],
 	"file_history":
 	[
-		"/C/Users/Alexandre/Nouveau document texte.txt",
 		"/F/Programmation/WebRTC/readme.md",
+		"/F/Programmation/WebRTC/LICENSE.txt",
+		"/F/Programmation/WebRTC/docs/index.md",
+		"/F/Programmation/WebRTC/.gitignore",
+		"/F/Programmation/WebRTC/.tmp/templates.js",
+		"/C/Users/Alexandre/Nouveau document texte.txt",
 		"/F/Programmation/WebRTC/readme.txt",
 		"/F/Programmation/WebRTC/.gitattributes",
 		"/F/Programmation/outils/changelog.txt",
@@ -133,68 +114,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "readme.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4285,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1778,
-								1778
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "client/components/navbar/navbar.controller.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 687,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

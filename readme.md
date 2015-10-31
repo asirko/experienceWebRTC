@@ -73,7 +73,7 @@ git push origin master
 
 ### Récupérer les modifications des autres
 
-Lorsque de nouvelles fonctionalités ont été développées par d'autre, il est très simple de les récuppérer sur sa verion du projet. Il faut utiliser la commande : `git pull`.
+Lorsque de nouvelles fonctionalités ont été développées par d'autre, il est très simple de les récuppérer sur sa version du projet. Il faut utiliser la commande : `git pull`.
 
 Ici encore, il faut être vigilant, le "git pull" nécessite de ne pas avoir de modification "flottante". Le terme de modification "flottante" du code est utilisé ici pour désigner des modifications qui n'auraient pas été commités.
 
@@ -115,17 +115,17 @@ Ici encore, il faut être vigilant, le "git pull" nécessite de ne pas avoir de 
 
 
 
-### Listes commandes utiles classées par catégorie
+###### Listes commandes utiles classées par catégorie
 
 
-#POUR ROUTES
+######POUR ROUTES
 	(Si pas déjà installer faire) -> npm install –g yo generator-angular-fullstack
 
 	Créer une route : yo angular-fullstack:route nomDeLaRoute
 
 
 
-#LANCER SERVEUR
+######LANCER SERVEUR
 
 	1)Ouvrir deux invites de commandes
 
