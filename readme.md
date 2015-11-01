@@ -79,6 +79,16 @@ Ici encore, il faut être vigilant, le "git pull" nécessite de ne pas avoir de 
 
 ## Structure du projet
 
+### Les grandes "briques" du framework
+
+Ce projet met en oeuvre la "fullstack" MEAN. (Fullstack désigne un ensemble de librairies permettant de couvrir tous les besoins pour lier présentation et persitance des données). La fullstack MEAN regroupe 4 composants principaux permettant de réaliser une application web intégralement basée sur le langage Javascript :
+* **M**ngoDB : la base de données NoSQL qui stocke des documents très similaires à du JSON ;
+* **E**xpress.js : la librairie Javascript structurant le back-end ;
+* **A**ngular.js : une autre librairies permettant de structurer le front-end ;
+* **N**ode.js : platforme permettant d'interpréter le Javascript et qui s'occupe des couches les plus basses de l'application (les flux de données), certains programme en Javascript peuvent alors devenir des serveurs d'application web.
+
+Comme sous-entendu dans ce découpage, MEAN découpe très nettement le serveur de la présentation. Le serveur n'est plus résponsable de la mise en forme de la présentation, la présentation est hébergée sur le serveur comme un contenu statique. Le serveur peut alors se concentrer sur les tâches les plus importantes. Par exemple : mettre à disposition et stocker les données hébergées, gérer authentification et authorisation, vérifier que les modifications demandées sur les données sont "licite" en fonction des règles de gestion mise en place, etc.
+
 ### Librairies utilisées
 
 ### Architecture
