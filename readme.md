@@ -56,24 +56,24 @@ L'application est ainsi démarrée et peut être utilisée.
 
 ### Pousser des modifications
 
-Le terme "pousser" désigner l'action de publier du code sur le répertoire parent et donc de partager vos modifications. Pour pouvoir effectivement pousser du code, il faut avoir à l'esprit que les administrateur de ce répertoire doivent vous y autoriser.
+Le terme "pousser" désigne l'action de publier du code sur le répertoire parent et donc de partager vos modifications. Pour pouvoir effectivement pousser du code, il faut avoir à l'esprit que les administrateurs de ce répertoire doivent vous y autoriser.
 
-Dans la plupart des cas, pousser du code s'effectuer en trois commandes successives:
+Dans la plupart des cas, pousser du code s'effectue en trois commandes successives:
 ```
 git add --all
 git commit -m "votre message décrivant ce qui est commité"
 git push origin master
 ```
 
-* **add** permet d'ajouter des fichiers que git pourra prendre en compte, en association avec **rm**, il est possible d'ajouter de nouveaux fichiers ou d'en écarter temporairement d'autre le temps d'un commit.
+* **add** permet d'ajouter des fichiers que git pourra prendre en compte, en association avec **rm**, il est possible d'ajouter de nouveaux fichiers, ou d'en écarter d'autre, le temps d'un commit.
 * **commit** permet de dire à git "Le code qui a évolué est dans un état "fini"", archivant les modifications dans le système de gestion des versions local. Essayez de préciser dans le message lié au "commit" les fonctionnalités impactées et les raisons des modifications.
-* **push** permet de pousser les commit vers d'autres répertoires. Dans l'exemple plus haut, *origin* correspond au répertoire d'où le code provient (normalement, le répertoire sur github) et *master* correspond à la branche sur laquelle le code doit être poussé.
+* **push** permet de pousser les commit vers d'autres répertoires. Dans l'exemple plus haut, *origin* correspond au répertoire d'où le code provient (normalement, le répertoire sur github) et *master* correspond à la branche sur laquelle le code doit être poussé (master est l'équivalent du trunk).
 
-**Note :** Il se peut que la réponse soit en erreur, vous précisant que votre version du code code n'est pas à jour par rapport au code présent sur le répertoire central. Dans ce cas vous devrez [mettre à jour votre code](https://github.com/asirko/experienceWebRTC#récupérer-les-modifications-des-autres)
+**Note :** Il se peut que la réponse soit en erreur, vous précisant que votre version du code code n'est pas à jour par rapport au code présent sur le répertoire central. Dans ce cas vous devrez [mettre à jour votre code](https://github.com/asirko/experienceWebRTC#récupérer-les-modifications-des-autres).
 
 ### Récupérer les modifications des autres
 
-Lorsque de nouvelles fonctionalités ont été développées par d'autre, il est très simple de les récuppérer sur sa version du projet. Il faut utiliser la commande : `git pull`.
+Lorsque de nouvelles fonctionalités ont été développées par d'autre, il est très simple de les récuppérer sur sa version locale du projet. Il faut utiliser la commande : `git pull`.
 
 Ici encore, il faut être vigilant, le "git pull" nécessite de ne pas avoir de modification "flottante". Le terme de modification "flottante" du code est utilisé ici pour désigner des modifications qui n'auraient pas été commités.
 
