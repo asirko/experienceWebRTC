@@ -56,24 +56,24 @@ L'application est ainsi démarrée et peut être utilisée.
 
 ### Pousser des modifications
 
-Le terme "pousser" désigne l'action de publier du code sur le répertoire parent et donc de partager vos modifications. Pour pouvoir effectivement pousser du code, il faut avoir à l'esprit que les administrateurs de ce répertoire doivent vous y autoriser.
+Le terme "pousser" désigner l'action de publier du code sur le répertoire parent et donc de partager vos modifications. Pour pouvoir effectivement pousser du code, il faut avoir à l'esprit que les administrateur de ce répertoire doivent vous y autoriser.
 
-Dans la plupart des cas, pousser du code s'effectue en trois commandes successives:
+Dans la plupart des cas, pousser du code s'effectuer en trois commandes successives:
 ```
 git add --all
 git commit -m "votre message décrivant ce qui est commité"
 git push origin master
 ```
 
-* **add** permet d'ajouter des fichiers que git pourra prendre en compte, en association avec **rm**, il est possible d'ajouter de nouveaux fichiers, ou d'en écarter d'autre, le temps d'un commit.
+* **add** permet d'ajouter des fichiers que git pourra prendre en compte, en association avec **rm**, il est possible d'ajouter de nouveaux fichiers ou d'en écarter temporairement d'autre le temps d'un commit.
 * **commit** permet de dire à git "Le code qui a évolué est dans un état "fini"", archivant les modifications dans le système de gestion des versions local. Essayez de préciser dans le message lié au "commit" les fonctionnalités impactées et les raisons des modifications.
-* **push** permet de pousser les commit vers d'autres répertoires. Dans l'exemple plus haut, *origin* correspond au répertoire d'où le code provient (normalement, le répertoire sur github) et *master* correspond à la branche sur laquelle le code doit être poussé (master est l'équivalent du trunk).
+* **push** permet de pousser les commit vers d'autres répertoires. Dans l'exemple plus haut, *origin* correspond au répertoire d'où le code provient (normalement, le répertoire sur github) et *master* correspond à la branche sur laquelle le code doit être poussé.
 
-**Note :** Il se peut que la réponse soit en erreur, vous précisant que votre version du code code n'est pas à jour par rapport au code présent sur le répertoire central. Dans ce cas vous devrez [mettre à jour votre code](https://github.com/asirko/experienceWebRTC#récupérer-les-modifications-des-autres).
+**Note :** Il se peut que la réponse soit en erreur, vous précisant que votre version du code code n'est pas à jour par rapport au code présent sur le répertoire central. Dans ce cas vous devrez [mettre à jour votre code](https://github.com/asirko/experienceWebRTC#récupérer-les-modifications-des-autres)
 
 ### Récupérer les modifications des autres
 
-Lorsque de nouvelles fonctionalités ont été développées par d'autre, il est très simple de les récuppérer sur sa version locale du projet. Il faut utiliser la commande : `git pull`.
+Lorsque de nouvelles fonctionalités ont été développées par d'autre, il est très simple de les récuppérer sur sa version du projet. Il faut utiliser la commande : `git pull`.
 
 Ici encore, il faut être vigilant, le "git pull" nécessite de ne pas avoir de modification "flottante". Le terme de modification "flottante" du code est utilisé ici pour désigner des modifications qui n'auraient pas été commités.
 
@@ -87,13 +87,15 @@ Ce projet met en oeuvre la "fullstack" MEAN (fullstack désigne un ensemble de l
 * **A**ngular.js : une autre librairies permettant de structurer le front-end ;
 * **N**ode.js : platforme permettant d'interpréter le Javascript et qui s'occupe des couches les plus basses de l'application (les flux de données), certains programme en Javascript peuvent alors devenir des serveurs d'application web.
 
-Comme sous-entendu dans ce découpage, MEAN découpe très nettement le serveur de la présentation. Le serveur n'est plus résponsable de la mise en forme de la présentation, la présentation est hébergée sur le serveur comme un contenu statique. Le serveur peut alors se concentrer sur les tâches les plus importantes. Par exemple : mettre à disposition et stocker les données hébergées, gérer authentification et autorisation, vérifier que les modifications demandées sur les données sont "licite" en fonction des règles de gestion mise en place, etc.
+Comme sous-entendu dans ce découpage, MEAN découpe très nettement le serveur de la présentation. Le serveur n'est plus résponsable de la mise en forme de la présentation, la présentation est hébergée sur le serveur comme un contenu statique. Le serveur peut alors se concentrer sur les tâches les plus importantes. Par exemple : mettre à disposition et stocker les données hébergées, gérer authentification et authorisation, vérifier que les modifications demandées sur les données sont "licite" en fonction des règles de gestion mise en place, etc.
 
 ### Librairies utilisées
 
 En plus d'Express et d'Angular, d'autres librairies ont été ajoutées au projet. Voici les principales ainsi que leurs rôles :
-* **passport.js** permet de gérer l'autentification pour les web service ;
-* **mongoose** 
+* **passport.js** permet de gérer l'autentification pour les web service (back-end) ;
+* **mongoose** gère les connections à la base de données et organise la description des modèles des données (back-end) ;
+* **ui-router** améliore les possiblité de routage et de templating avec Angular (front-end) ;
+* **Bootstrap** propose une structure pour le design des composants, ici bootstrap est essentiellement utilisé pour sa partie CSS (front-end).
 
 ### Architecture
 
