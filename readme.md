@@ -91,6 +91,10 @@ Comme sous-entendu dans ce découpage, MEAN découpe très nettement le serveur 
 
 ### Librairies utilisées
 
+En plus d'Express et d'Angular, d'autres librairies ont été ajoutées au projet. Voici les principales ainsi que leurs rôles :
+* **passport.js** permet de gérer l'autentification pour les web service ;
+* **mongoose** 
+
 ### Architecture
 
 #### Décomposition globale
